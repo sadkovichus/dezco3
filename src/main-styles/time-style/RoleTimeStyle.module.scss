@@ -1,0 +1,11 @@
+.user::before {
+    background-color: var(--time-color);
+}
+
+.admin::before {
+    background-color: var(--color-for-admin);
+}
+
+.god::before {
+    background: var(--color-for-god);
+}

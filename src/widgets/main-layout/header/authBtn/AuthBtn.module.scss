@@ -1,0 +1,46 @@
+.auth {
+    display: flex;
+    gap: 13px;
+
+    a {
+        border-radius: 5px;
+
+        color: #FFF;
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .log_in {
+        padding: 8px 21px;
+        background: #111F22;
+
+        &:hover {
+            background: #223e44;
+        }
+    }
+
+    .create_acc {
+        padding: 8px 10px;
+        background: #1870F4;
+
+        &:hover {
+            background: #5896f2;
+        }
+    }
+
+    .profile_link {
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #111F22;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.default_style {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(40, 59, 66, 0.45);
+    background-color: transparent;
+    resize: none;
+
+    font-size: 20px;
+    color: white;
+
+    &::selection {
+        color: white;
+        background-color: #233e44;
+        text-shadow: none;
+    }
+
+    &::-moz-selection {
+        color: white;
+        background-color: #111F22;
+        text-shadow: none;
+    }
+}
+
+.bg {
+    background-color: var(--document-color);
+}

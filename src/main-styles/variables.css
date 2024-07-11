@@ -1,0 +1,5 @@
+#root {
+    --color-for-admin: #0047FF;
+    --color-for-god: rgb(251, 65, 65);
+    --color-for-prev-user: rgba(40, 59, 66, 0.45);
+}

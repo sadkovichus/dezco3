@@ -1,0 +1,31 @@
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-weight:400;
+        font-size: 15px;
+    }
+
+    input {
+        padding: 0.6em;
+        border: 0.5px solid rgba(40, 59, 66, 0.45);
+        border-radius: 5px;
+        margin-top: 10px;
+        transition-duration: .2s;
+        background-color: transparent;
+
+        color: white;
+        font-size: 16px;
+
+        &:hover {
+            border-color: rgba(54, 80, 91, 0.45);
+        }
+
+        // &:focus {
+        //     border-color: #3b49df;
+        //     box-shadow: 0 0 0 1.5px #3b49df;
+        // }
+    }
+
+}

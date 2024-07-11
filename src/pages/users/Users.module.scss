@@ -1,0 +1,129 @@
+.users {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    width: 200px;
+
+    button {
+        cursor: pointer;
+        background-color: #0d171a;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition-duration: .2s;
+
+        font-family: Roboto;
+        color: #e1e3e6;
+
+        &:hover {
+            background-color: #132125;
+        }
+    }
+
+    .active_btn {
+        background-color: #132125;
+    }
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 80vh;
+    overflow: auto;
+    padding-right: 10px;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: var(--document-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #111F22;
+        border: .5px solid rgba(40, 59, 66, 0.45);
+        border-radius: 5px;
+    }
+}
+
+.user {
+    padding: 5px;
+    display: flex;
+    transition: .2s;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+        background-color: #0d171a;
+    }
+
+    font-family: Inter;
+    color: white;
+    font-size: 13px;
+}
+
+.photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .photo_img {
+        background-color: black;
+    }
+
+    img,
+    .photo_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.name_email {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    .email {
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.578);
+    }
+}
+
+.right {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.role {
+    font-size: 13px;
+}
+
+.is_you {
+    font-size: 10px;
+    color: yellowgreen;
+}

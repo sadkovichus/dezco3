@@ -1,0 +1,17 @@
+.btn {
+    padding: 12px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(40, 59, 66, 0.45);
+    background-color: #111F22;
+    width: 100%;
+    margin-top: 30px;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: rgba(40, 59, 66, 0.45);
+    }
+}

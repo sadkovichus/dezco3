@@ -1,0 +1,47 @@
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    transition: .2s;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    height: 40px;
+    background-color: #0d171a;
+
+    font-family: Inter;
+    color: white;
+    font-size: 13px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: -100px;
+        width: 10px;
+        height: 500%;
+        background-color: rgb(115, 145, 156);
+        filter: blur(50px);
+        animation: skeleton 1s linear infinite;
+    }
+}
+
+@keyframes skeleton {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 582px;
+    }
+}

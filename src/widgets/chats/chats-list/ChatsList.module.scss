@@ -1,0 +1,130 @@
+.chats_list {
+    height: 100%;
+    width: 300px;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border-right: 1px solid rgba(40, 59, 66, 0.45);
+
+    font-family: Inter;
+}
+
+.search_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        left: 20px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: rgba(255, 255, 255, 0.367);
+        opacity: 0;
+        transition-duration: .2s;
+        animation: search_loader 0.8s linear infinite;
+    }
+}
+
+.active_search_container {
+    &::before {
+        opacity: 1;
+    }
+}
+
+@keyframes search_loader {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.search {
+    padding: 10px 20px;
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 20px;
+    transition-duration: .2s;
+    flex: 1;
+
+    font-size: 15px;
+    color: white;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.367);
+    }
+}
+
+.active_search {
+    padding-left: 0;
+    text-indent: 35px;
+}
+
+.list {
+    flex-direction: column;
+    padding-top: 15px;
+
+    .chat {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+
+        &:hover {
+            background-color: #43434317;
+        }
+
+        color: white;
+        font-family: Inter;
+        font-size: 14px;
+    }
+
+    // li {
+    //     width: 100%;
+
+    // }
+}
+
+.photo {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2c2c2c;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.top {
+    display: flex;
+}
+
+.last_msg_time {
+    margin-left: auto;
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.367);
+}
+
+.right {
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.last_msg {
+    color: rgba(255, 255, 255, 0.367);
+    margin-top: 5px;
+}

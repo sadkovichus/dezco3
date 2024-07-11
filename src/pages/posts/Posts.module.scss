@@ -1,0 +1,38 @@
+.posts {
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+
+    * {
+        font-family: Inter;
+        color: white;
+    }
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.not_posts_message {
+    color: rgb(65, 85, 92);
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+
+    a {
+        color: #0b2855;
+        text-decoration: underline;
+    }
+}

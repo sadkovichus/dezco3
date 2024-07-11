@@ -1,0 +1,90 @@
+.skeleton {
+    padding: 10px 8px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0.5px solid rgba(40, 59, 66, 0.45);
+    margin-top: auto;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(40, 59, 66, 0.45);
+}
+
+.name {
+    font-size: 13px;
+    color: rgba(159, 159, 159, 0.69);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.time {
+    position: relative;
+    color: rgba(159, 159, 159, 0.69);
+    font-size: 13px;
+    margin-left: 15px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: -10px;
+        top: 50%;
+        translate: 0 -50%;
+        width: 4px;
+        border-radius: 50%;
+        height: 4px;
+        background-color: rgba(159, 159, 159, 0.69);
+    }
+}
+
+.before {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: -100px;
+        width: 10px;
+        height: 500%;
+        background-color: rgb(115, 145, 156);
+        filter: blur(20px);
+        animation: skeleton 1s linear infinite;
+    }
+}
+
+.block {
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(40, 59, 66, 0.45);
+    overflow: hidden;
+}
+
+.title {
+    width: 200px;
+}
+
+.text {
+    height: 200px;
+}
+
+@keyframes skeleton {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 582px;
+    }
+}

@@ -1,0 +1,21 @@
+html {
+  --color-for-admin: #0047ff;
+  --color-for-god: rgb(251, 65, 65);
+  --color-for-prev-user: rgba(40, 59, 66, 0.45);
+}
+
+html[data-theme='dark'] {
+  --document-color: #0b1416;
+  --time-color: rgba(159, 159, 159, 0.69);
+  --post-bg: transparent;
+  --post-border-color: rgba(40, 59, 66, 0.45);
+  --like-bg: rgba(40, 59, 66, 0.45);
+}
+
+html[data-theme='midle'] {
+  --document-color: #0f0f0f;
+  --time-color: white;
+  --post-bg: #0f0f0fc7;
+  --post-border-color: rgba(114, 131, 137, 0.107);
+  --like-bg: rgb(29 34 36 / 45%);
+}
