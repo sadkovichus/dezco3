@@ -7,7 +7,7 @@ import TypePost from '../../types/entities/posts/TypePost';
 import { UserState } from '../../types/slice';
 import useStorage from '../../hooks/useStorage';
 import { useAppSelector } from '../../store';
-import { get, getDatabase, ref, remove, set } from 'firebase/database';
+import { get, getDatabase, ref, remove } from 'firebase/database';
 import getPost from '../../features/posts/gettongPost';
 import LittleLoader from '../../widgets/little-laoder/LittleLoader';
 import likeFn from '../../features/posts/like-fn/LikeFn';
